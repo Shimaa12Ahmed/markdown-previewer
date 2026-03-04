@@ -1,16 +1,115 @@
-# React + Vite
+# Markdown Previewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A live **Markdown Editor and Previewer** built with **React** that converts Markdown syntax into formatted HTML in real time.
 
-Currently, two official plugins are available:
+This project was developed as part of the **FreeCodeCamp Frontend Libraries Certification**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Live Demo
+https://markdown-previewer-ten-kappa.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Live Markdown preview while typing
+- Supports **GitHub Flavored Markdown (GFM)**
+- Code blocks and inline code
+- Blockquotes
+- Ordered lists
+- Links and images
+- Dark / Light mode toggle
+- Responsive UI using Bootstrap
+- Secure HTML rendering using DOMPurify
+
+---
+
+## Technologies Used
+
+- React
+- JavaScript (ES6+)
+- Marked.js
+- DOMPurify
+- Bootstrap 5
+- CSS Grid
+- Bootstrap Icons
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/markdown-previewer.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd markdown-previewer
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## How It Works
+
+The application contains two main panels:
+
+### Editor
+A textarea where users can write Markdown syntax.
+
+### Preview
+Displays the parsed Markdown as rendered HTML.
+
+As the user types in the editor, the Markdown is parsed using **Marked.js** and safely rendered using **DOMPurify**.
+
+---
+
+## Supported Markdown Elements
+
+The preview supports multiple Markdown elements including:
+
+- Headers (`#`, `##`)
+- Bold text (`**bold**`)
+- Blockquotes (`>`)
+- Ordered lists (`1.`)
+- Links (`[text](url)`)
+- Inline code (`` `code` ``)
+- Code blocks (```javascript)
+- Images (`![alt](url)`)
+
+---
+
+## Project Structure
+
+```
+src
+ ├── components
+ │    ├── Editor.jsx
+ │    └── Preview.jsx
+ ├── App.jsx
+ ├── main.jsx
+ └── styles.css
+```
+
+---
+
+## Author
+
+Shimaa Ahmed  
+Frontend Developer
+
